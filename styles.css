@@ -6,6 +6,12 @@
 
 body {
     background-color: rgb(236, 236, 236);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +26,7 @@ h1 {
 
 button.Add-book {
     margin: 32px;
-    width: 15%;
+    width: 15vw;
     height: 48px;
     border: none;
     border-radius: 16px;
@@ -74,4 +80,49 @@ button.has-not-read {
     background-color: red;
     width: 75px;
     font-size: 18px;
+}
+
+.add-book-form {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 16px;
+    border-radius: 16px;
+    border: black solid 2px;
+    width: 20vw;
+}
+
+.add-book-form div {
+    display: grid;
+    margin: 16px;
+}
+
+.add-book-form div input {
+    border: black solid 1px;
+    border-radius: 2px;
+}
+
+.add-book-form fieldset {
+    display: grid;
+}
+
+.add-book-form fieldset div {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    margin: 12px;
+}
+
+.add-book-form button {
+    width: 50%;
+    margin-top: 16px;
+    height: 28px;
+    border-radius: 16px;
+    border: black solid 1px;
+}
+
+.add-book-form button:hover {
+    background-color: rgb(210, 210, 210);
 }
