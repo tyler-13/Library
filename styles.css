@@ -34,7 +34,11 @@ button.Add-book {
 }
 
 .book-container {
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    justify-content: center;
+    gap: 24px;
+    width: 80vw;
 }
 
 .book {
