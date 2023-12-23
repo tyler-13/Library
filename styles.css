@@ -37,6 +37,7 @@ button.Add-book {
     display: grid;
     grid-template-columns: repeat(auto-fit, 100px);
     justify-content: center;
+    align-items: end;
     gap: 24px;
     width: 80vw;
 }
@@ -54,9 +55,16 @@ button.Add-book {
     background-color: lightgreen;
     border: black solid 1px;
     border-radius: 4px;
-    height: 150px;
+    height: fit-content;
     padding: 8px;
     width: 75px;
+}
+
+.remove-book {
+    margin-top: 8px;
+    background-color: black;
+    color: white;
+    padding: 2px;
 }
 
 .book-info p {
@@ -73,7 +81,7 @@ button.has-read {
     border-radius: 4px;
     background-color: rgb(4, 175, 4);
     width: 75px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 button.has-not-read {
@@ -83,7 +91,7 @@ button.has-not-read {
     border-radius: 4px;
     background-color: red;
     width: 75px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .add-book-form {
@@ -97,6 +105,7 @@ button.has-not-read {
     border-radius: 16px;
     border: black solid 2px;
     width: 20vw;
+    min-width: 235px;
 }
 
 .add-book-form div {
@@ -109,11 +118,12 @@ button.has-not-read {
     border-radius: 2px;
 }
 
-.add-book-form fieldset {
+.add-book-form .radio {
     display: grid;
+    border: black solid 1px;
 }
 
-.add-book-form fieldset div {
+.add-book-form .radio div {
     display: grid;
     grid-template-columns: 48px 1fr;
     margin: 12px;
