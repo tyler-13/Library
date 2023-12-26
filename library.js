@@ -47,20 +47,14 @@ function createBook(title, author, pages, read) {
     const remove = div.querySelector('button.remove-book');
     remove.addEventListener('click', () => {
         const div = button.parentElement;
-        //const index = bookSets.findIndex(div);
+        const index = bookSets.indexOf(div);
         div.parentElement.removeChild(div);
-        //bookSets.splice(index, 1);
+        bookSets.splice(index, 1);
     })
     bookContainer.appendChild(div);
     console.log("TEST");
     console.log(bookSets);
 }
-const testButton = document.querySelector('.temp');
-testButton.addEventListener('click', () => {
-    createBook('the whole', 'tyler', '567', true);
-
-})
-
 
 const addBook = document.querySelector('.Add-book');
 const addBookForm = document.querySelector('.add-book-form');
